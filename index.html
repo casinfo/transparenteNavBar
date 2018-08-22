@@ -1,0 +1,137 @@
+<Html>
+<head>
+<title> Transparente Menu usando navbar</title>
+<style>
+body{
+    background-image: url('imagem-fundo.jpg');
+    background-size: cover;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    margin: 0;
+    line-height: 24px;
+}
+
+.navbar {
+    text-align: center;
+    width: 100%;
+    background: green;
+    opacity: 0.5;
+
+
+}
+
+
+.navbar ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: relative;
+
+}
+
+
+.navbar ul li a {
+    display: block;
+    padding: 25px;
+    color: white;
+    text-decoration: none;
+    width: 150px;
+}
+
+.navbar ul:after {
+    content: ""; 
+    clear: both;
+    display: block;
+}
+
+.navbar ul li {
+    float: left;
+    list-style-type: none;
+}
+
+.navbar ul ul {
+
+    display: none;
+
+}
+
+.navbar ul li:hover > ul {
+
+    display: block;
+}
+
+.navbar ul li:hover a {
+
+    background: black;
+    transition: 0.9s;
+
+}
+
+.navbar ul li:hover a {
+    color: white;
+}
+
+.navbar ul ul {
+
+    background: black;
+    padding:0;
+    margin:0;
+    position: absolute;
+    top: 100%;
+}
+
+.navbar ul ul li {
+
+    float: none;
+    position: relative;
+
+}
+
+.navbar ul ul li a {
+
+    padding: 25px;
+    color: white;
+    width: 300px;
+    text-align: left;
+
+}
+
+.navbar ul ul li a:hover {
+
+    background: lightblue;
+    color: black;
+    transition: 0.9s;
+}
+
+
+</style>
+</head>
+<body>
+    <div class="navbar">
+        <ul>
+            <li><a href="#"> Home </a></li> 
+            <li><a href="#"> Apostila</a>
+                <ul>
+                    <li><a href="#"> HTML</a></li>
+                    <li><a href="#"> CSS</a></li>
+                    <li><a href="#"> PHP</a></li>
+                    <li><a href="#"> ASP</a></li>
+                    <li><a href="#"> SQL</a></li>
+                    <li><a href="#"> Progress</a></li>
+                </ul>
+            </li>
+            <li><a href="#"> Vídeo</a>
+                <ul>
+                    <li><a href="#"> Aula 1</a></li>
+                    <li><a href="#"> Aula 2</a></li>
+                    <li><a href="#"> Aula 3</a></li>
+                    <li><a href="#"> Aula 4</a></li>
+                    <li><a href="#"> Aula 5</a></li>
+                </ul>
+            </li>
+            <li><a href="#"> Notícia</a></li> 
+            <li><a href="#"> Contato</a></li> 
+        </ul>
+    </div>
+</body>
+</Html>
